@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 from passlib.hash import bcrypt
-from app.models.user import User
-from app.schemas.user_schema import UserCreate, UserBase
+from models.user import User
+from schemas.user_schema import UserCreate, UserBase
 
 # CREATE
 def create_user(db: Session, user: UserCreate):

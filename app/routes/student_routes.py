@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, File, UploadFile
 from sqlalchemy.orm import Session
 from typing import List
-from app.database import get_db
-from app.schemas.student_schema import StudentCreate, StudentOut, StudentBase
-from app.controllers import student_controller
+from database import get_db
+from schemas.student_schema import StudentCreate, StudentOut, StudentBase
+from controllers import student_controller
 
 router = APIRouter(prefix="/students", tags=["Students"])
 

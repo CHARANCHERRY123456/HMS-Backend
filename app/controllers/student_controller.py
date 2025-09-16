@@ -2,8 +2,8 @@ import io
 import csv
 from sqlalchemy.orm import Session
 from fastapi import UploadFile, HTTPException
-from app.models.student import Student
-from app.schemas.student_schema import StudentCreate, StudentBase
+from models.student import Student
+from schemas.student_schema import StudentCreate, StudentBase
 from fastapi.responses import StreamingResponse
 
 # CREATE

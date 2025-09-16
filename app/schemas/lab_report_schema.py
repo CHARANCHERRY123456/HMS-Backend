@@ -11,12 +11,12 @@ class LabReportCreate(LabReportBase):
 
 class LabReportUpdate(BaseModel):
     status: Optional[str] = None
-    result_url: Optional[str] = None
+    result: Optional[str] = None
 
 class LabReportResponse(LabReportBase):
     id: int
     status: str
-    result_url: Optional[str]
+    result: Optional[str]
     created_at: datetime
     updated_at: Optional[datetime]
 
