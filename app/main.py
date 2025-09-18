@@ -24,3 +24,6 @@ app.include_router(prescription_routes.router)
 app.include_router(prescription_medicine_routes.router)
 app.include_router(inventory_routes.router)
 
+@app.get("/")
+def root():
+    return {"status" : "ok" , "message" : "Welcoime bro its working"}
